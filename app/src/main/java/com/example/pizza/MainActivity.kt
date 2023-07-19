@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import com.example.pizza.pizzaScreen.PizzaScreen
 import com.example.pizza.ui.theme.PizzaTheme
 
 class MainActivity : ComponentActivity() {
@@ -12,6 +13,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             PizzaTheme {
+                PizzaScreen()
             }
         }
     }

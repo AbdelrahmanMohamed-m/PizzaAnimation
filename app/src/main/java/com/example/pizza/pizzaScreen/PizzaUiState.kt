@@ -1,23 +1,4 @@
-package com.example.pizza
-
-data class PizzaUiState (
-    val BreadList: List<BreadTypeUiState> = listOf(),
-)
-
-
-data class BreadTypeUiState(
-    val Bread: Int,
-    val ingredients: List<Ingredient> = listOf(),
-)
-
-data class Ingredient(
-    val basil: Int,
-    val susage: Int,
-    val Brocoili: Int,
-    val mushroom: Int,
-    val onion: Int,
-    )
-
+package com.example.pizza.pizzaScreen
 
 
 data class PizzaOrderingUiState(
@@ -38,7 +19,6 @@ data class Topping(
     val id: Int = 0,
     val name: String = "",
     val mainImage: Int = 0,
-    val price: Int = 0,
     val image: Int = 0,
     var isSelected: Boolean = false,
 )
